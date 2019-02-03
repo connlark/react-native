@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2015-present, Facebook, Inc.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -87,12 +87,12 @@ RCT_EXPORT_METHOD(openURL:(NSURL *)URL
                   resolve:(RCTPromiseResolveBlock)resolve
                   reject:(RCTPromiseRejectBlock)reject)
 {
-  /*BOOL opened = [RCTSharedApplication() openURL:URL];
+  BOOL opened = [RCTSharedApplication() openURL:URL];
   if (opened) {
     resolve(nil);
   } else {
     reject(RCTErrorUnspecified, [NSString stringWithFormat:@"Unable to open URL: %@", URL], nil);
-  }*/
+  }
 }
 
 RCT_EXPORT_METHOD(canOpenURL:(NSURL *)URL
